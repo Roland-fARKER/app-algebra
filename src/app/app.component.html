@@ -3,6 +3,9 @@
   <input [(ngModel)]="expression" placeholder="Ingresa una expresión" />
   <button (click)="solve()">Resolver</button>
   <div *ngFor="let step of steps">
-    <p>{{ step }}</p>
+    <p>
+      <strong>{{ step.text }}</strong>
+      <span *ngIf="step.value">: {{ step.value }}</span>
+    </p>
   </div>
 </div>
