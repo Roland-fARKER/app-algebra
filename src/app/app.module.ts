@@ -13,6 +13,7 @@ import { StepsComponent } from './components/steps/steps.component';
 import { HomeComponent } from './views/home/home.component';
 import { EquationFormatPipe } from './pipes/equation-format.pipe';
 import { OurstoryComponent } from './components/ourstory/ourstory.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { OurstoryComponent } from './components/ourstory/ourstory.component';
     HomeComponent,
     EquationFormatPipe,
     OurstoryComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
