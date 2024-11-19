@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlgebraService } from './services/algebra.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'app-algebra';
+  expression = '';
+  steps: string[] = [];
+
+  constructor(private algebraService: AlgebraService) {}
+
+  solve() {
+    this.steps = this.algebraService.solve(this.expression);
+  }
 }
