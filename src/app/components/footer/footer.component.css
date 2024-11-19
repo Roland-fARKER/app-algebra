@@ -1,0 +1,55 @@
+
+/* Estilos generales para el footer */
+.footer {
+    background-color: #1a202c;
+    color: #ffffff;
+    padding: 0.2rem;
+    height: auto;
+    width: 100%;
+  }
+  
+  /* Sección de la universidad */
+  .footer-section1 h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .footer-section1 h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Descripción del proyecto */
+  
+  .footer-section2 p {
+    font-size: 0.938rem;
+    font-style: oblique;
+    color: rgb(182, 178, 173);
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .footer-section3 p {
+    text-align: center;
+    font-style: unset;
+  }
+  
+  /* Descripción del proyecto e iconos */
+  
+  .footer a {
+    color: #b7eee7;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  /* Derechos de autor */
+  .autor {
+    font-size: 0.75rem;
+    color: #a0aec0;
+    margin-top: 0;
+    text-align: end;
+  }
+  
