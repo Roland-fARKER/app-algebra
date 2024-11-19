@@ -1,5 +1,34 @@
 <div class="title-container">
   <h1>Resolver Expresión Algebraica</h1>
+  <div style="padding: 15px">
+    <div class="info-contend">
+      <h2><i class="fa-solid fa-info-circle"></i> Puedes intentar con:</h2>
+      <ul>
+        <li>Suma, resta y multiplicación de polinomios</li>
+      </ul>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <small>Ejemplos de entrada:</small>
+
+        <small> 4m+n+5n+2n </small>
+
+        <small> (3x^2) * (8x^6) </small>
+      </div>
+    </div>
+  </div>
+  <div style="padding: 15px">
+    <p-messages
+      [value]="messages"
+      [enableService]="false"
+      [closable]="false"
+    ></p-messages>
+  </div>
 
   <div class="input-data">
     <input
@@ -28,7 +57,7 @@
   <img class="pic" src="../../../assets/atro.svg" alt="Imagen" />
 </div>
 
-<br>
-<br>
+<br />
+<br />
 
 <app-ourstory></app-ourstory>

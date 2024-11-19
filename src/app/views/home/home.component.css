@@ -18,3 +18,15 @@
 .pic {
   max-width: 600px;
 }
+
+.info-contend{
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border:  1px solid var(--primary-color);
+}

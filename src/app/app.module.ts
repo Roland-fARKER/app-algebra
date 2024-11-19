@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { TimelineModule } from 'primeng/timeline';
+import { MessagesModule } from 'primeng/messages';
 
 import { StepsComponent } from './components/steps/steps.component';
 import { HomeComponent } from './views/home/home.component';
@@ -30,7 +31,8 @@ import { FooterComponent } from './components/footer/footer.component';
     FormsModule,
     ButtonModule,
     InputTextModule,
-    TimelineModule
+    TimelineModule,
+    MessagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
