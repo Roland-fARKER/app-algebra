@@ -1,0 +1,13 @@
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-data {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}

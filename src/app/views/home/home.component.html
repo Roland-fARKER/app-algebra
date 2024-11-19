@@ -1,0 +1,33 @@
+<div class="title-container">
+  <h1>Resolver Expresión Algebraica</h1>
+
+  <div class="input-data">
+    <input
+      type="text"
+      pInputText
+      [(ngModel)]="expression"
+      placeholder="Ingresa una expresión"
+    />
+    <p-button (onClick)="solve()" label="Resolver"></p-button>
+  </div>
+</div>
+
+<div *ngIf="steps.length > 0">
+  <app-steps></app-steps>
+</div>
+
+<div
+  style="
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  "
+>
+  <img
+    style="width: 100%; max-width: 500px"
+    src="../../../assets/atro.svg"
+    alt="Imagen"
+  />
+</div>

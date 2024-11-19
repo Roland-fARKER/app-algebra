@@ -1,0 +1,45 @@
+.step-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: ease-in 0.5s;
+  max-width: 600px;
+}
+
+.step-card:hover {
+  background-color: var(--primary-color);
+  color: #121212;
+}
+
+.step-card h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.step-card p {
+  margin-left: 20px;
+}
+
+.info-container {
+  display: flex;
+  gap: 5px;
+}
+.w-full {
+  width: 100%;
+}
