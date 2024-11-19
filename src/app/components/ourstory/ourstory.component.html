@@ -1,0 +1,55 @@
+<!-- Misión y Vision -->
+<section class="section-content">
+    <h2 class="section-title">Nuestra Misión y Visión</h2>
+    <div class="mission-vision-container">
+      <div class="mision">
+        <h4>Misión</h4>
+        <p>
+          Crear una herramienta innovadora y fácil de usar para estudiantes de
+          todas las edades.
+        </p>
+      </div>
+      <div class="vision">
+        <h4>Visión</h4>
+        <p>
+          Convertirnos en una plataforma educativa destacada que transforme la
+          manera en que los estudiantes.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Equipo -->
+    <h2 class="section-title">Desarrolladores</h2>
+    <div class="team-grid">
+      <div *ngFor="let member of teamMembers" class="team-member">
+        <img [src]="member.image" class="rounded-circle" [alt]="member.alt" />
+        <div>
+          <h5 class="team-name">{{ member.name }}</h5>
+          <small><i style="font-size: 15px;" class="fa-brands fa-github"></i>
+            <a href="#">{{ member.gitUser }}</a>
+          </small>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Proceso de desarrollo -->
+    <div class="carrusel">
+      <h2 class="section-title">Nuestro Proceso de Desarrollo</h2>
+      <div class="carrusel-inner">
+        <div
+          *ngFor="let stage of developmentStages; let i = index"
+          [class.active]="showSlide(i)"
+          class="carrusel-item"
+        >
+          <img [src]="stage.image" [alt]="'Desarrollo ' + (i + 1)" />
+          <p class="text-center">{{ stage.description }}</p>
+        </div>
+      </div>
+      <p pButton pRipple (click)="prevSlide()" class="carrusel-btn">
+        <i class="pi pi-angle-double-left"></i>
+      </p>
+      <p pButton pRipple (click)="nextSlide()" class="carrusel-btn">
+        <i class="pi pi-angle-double-right"></i>
+      </p>
+    </div>
+  </section>

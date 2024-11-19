@@ -12,6 +12,7 @@ import { TimelineModule } from 'primeng/timeline';
 import { StepsComponent } from './components/steps/steps.component';
 import { HomeComponent } from './views/home/home.component';
 import { EquationFormatPipe } from './pipes/equation-format.pipe';
+import { OurstoryComponent } from './components/ourstory/ourstory.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { EquationFormatPipe } from './pipes/equation-format.pipe';
     StepsComponent,
     HomeComponent,
     EquationFormatPipe,
+    OurstoryComponent,
   ],
   imports: [
     BrowserModule,
