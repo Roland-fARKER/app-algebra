@@ -5,6 +5,9 @@
   align-items: center;
 }
 
+.title-container h1 {
+  text-align: center;
+}
 .input-data {
   display: flex;
   gap: 8px;

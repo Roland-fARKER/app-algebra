@@ -1,11 +1,14 @@
 <div class="step-container">
-  <ng-container *ngFor="let step of Steps">
+  <ng-container *ngFor="let step of Steps; let i = index">
     <div class="step-card">
       <div class="info-container">
         <i class="fa-solid fa-info-circle"></i>
         <h4>{{ step.text }}</h4>
       </div>
-      <p>{{ step.value }}</p>
+      <p>{{ step.value ?? "" | equationFormat }}</p>
+      <div class="badge">
+        {{ i + 1 }}
+      </div>
     </div>
   </ng-container>
 </div>

@@ -11,12 +11,14 @@ import { TimelineModule } from 'primeng/timeline';
 
 import { StepsComponent } from './components/steps/steps.component';
 import { HomeComponent } from './views/home/home.component';
+import { EquationFormatPipe } from './pipes/equation-format.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     StepsComponent,
     HomeComponent,
+    EquationFormatPipe,
   ],
   imports: [
     BrowserModule,
